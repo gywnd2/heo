@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+        <title>!!!Ligation!!!</title>
+        <script type="text/javascript" src="calculation.js"></script>
+    </head>
+    <body>
+        <form>
+            Vector:Insert ratio -> 1:
+            <select name="ratio" id="ratio">
+                <option value="none">Select num</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3 selected>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
+        </form>
+        Vector length(bp)
+        <input type="number" id="vectorLen"><br>
+        Insert length
+        <input type="number" id="insertLen"><br>
+        Vector conc. (ng/ul)
+        <input type="number" id="vectorConc"><br>
+        Insert conc.
+        <input type="number" id="insertConc"><br>
+        Vector mass (ng)
+        <input type="number" id="vectorMass" value="100"><br>
+        --------------------------------------------------------------<br>
+        <input type="button" class="button" id="calButton" value="Calculate!" onclick="calculate()"/><br>
+        Vector vol. (ul)
+        <input type="number" id="vectorVol" readonly><br>
+        Insert vol. (ul)
+        <input type="number" id="insertVol" readonly><br>
+    </body>
+</html>

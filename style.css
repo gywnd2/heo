@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body{
+    background-color: beige;
+    font-size: 20px;
+    font-family: AppleSDGothicNeoB00;
+}
+
+input {
+    width:200px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#calButton{
+    width:100px;
+    height: 100px;
+    font-size: 20px;
+    font-family: AppleSDGothicNeoB00;
+}
+
+#ratio{
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+select{
+    width: 100px;
+    height: 30px;
+}
