@@ -2,42 +2,52 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-        <title>!!!Ligation!!!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <title>어차피 짱은 서영이</title>
         <script type="text/javascript" src="calculation.js"></script>
     </head>
+    <tr>
+        <td><img src="img/best.png"></td><td><img src="img/good.png"></td><td><img src="img/heart.png"></td>
+    </tr>
+    <hr>
     <body>
-        <form>
-            Vector:Insert ratio -> 1:
-            <select name="ratio" id="ratio">
-                <option value="none">Select num</option>
-                <option value=1>1</option>
-                <option value=2>2</option>
-                <option value=3 selected>3</option>
-                <option value=4>4</option>
-                <option value=5>5</option>
-                <option value=6>6</option>
-                <option value=7>7</option>
-                <option value=8>8</option>
-                <option value=9>9</option>
-                <option value=10>10</option>
-            </select>
-        </form>
+        <div>
+            <form>
+                Vector:Insert ratio -> 1:
+                <select name="ratio" id="ratio">
+                    <option value="none">Select num</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3 selected>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <optison value=9>9</optison>
+                    <option value=10>10</option>
+                </select>
+            </form>
+        </div>
+
         Vector length(bp)
-        <input type="number" id="vectorLen"><br>
+        <input type="number" pattern="\d*" id="vectorLen"><br>
         Insert length
-        <input type="number" id="insertLen"><br>
+        <input type="number" pattern="\d*" id="insertLen"><br>
         Vector conc. (ng/ul)
-        <input type="number" id="vectorConc"><br>
+        <input type="number" pattern="\d*" id="vectorConc"><br>
         Insert conc.
-        <input type="number" id="insertConc"><br>
+        <input type="number" pattern="\d*" id="insertConc"><br>
         Vector mass (ng)
-        <input type="number" id="vectorMass" value="100"><br>
-        --------------------------------------------------------------<br>
+        <input type="number" pattern="\d*" id="vectorMass" value="100"><br>
+        <hr>
         <input type="button" class="button" id="calButton" value="Calculate!" onclick="calculate()"/><br>
+        <hr>
         Vector vol. (ul)
         <input type="number" id="vectorVol" readonly><br>
         Insert vol. (ul)
         <input type="number" id="insertVol" readonly><br>
+        <hr>
+        <A href="https://github.com/gywnd2">- https://github.com/gywnd2</A>
     </body>
 </html>
